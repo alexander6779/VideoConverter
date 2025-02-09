@@ -76,7 +76,7 @@ def download():
 
     # Common configuration for all videos
     video_options = {
-        'format': 'bestaudio/best',  # Download the best quality available
+        'format': 'best[ext=mp4]',  # Download the best quality available
         'merge_output_format': 'mp4',  # Merge video and audio into MP4
         'outtmpl': f'{destination_folder}/%(title)s.%(ext)s',  # Save with the video title  
         'n_connections': 6,  # Download up to 6 videos at the same time
